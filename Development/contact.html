@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title of the document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+	<section class="content">
+		<header class="header">
+			<figure class="logo">
+				<img src="img/logo-long.png">
+			</figure>
+
+			<div class="menu">
+				<div class="links">
+					<nav>
+						<a href="/product.html/">PRODUCT</a> 
+  						<a href="/contact.html/" class="active">CONTACT</a> 
+  						<a href="/blog.html/">BLOG</a> 
+  						<a href="">SIGN IN</a> 
+					</nav>
+				</div>
+
+				<div class="header-button btn">
+					SIGN UP
+				</div>
+			</div>
+		</header>
+	</section>
+
+	<div id="map">
+	</div>
+
+	<section class="photo-title">
+		<div class="content">
+			<div class="company-office-photo">
+			</div>
+
+			<article class="name-address">
+				<p class="name">Onyscale</p>
+				<p class="address">Stationsweg 271, 2515CA, The Hague, Netherlands</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="company-info">
+		<div class="content">
+			<iframe width="100%" height="550px" 
+				src="https://www.youtube.com/embed/XGSy3_Czz8k">
+			</iframe>
+
+			<div class="company-information">
+				<form name="htmlform" method="post" action="html_form_send.php">
+					<table width="100%">
+					</tr>
+					<tr>
+					 <td valign="top">
+					  <label for="first_name">First Name *</label>
+					 </td>
+					 <td valign="top">
+					  <input  type="text" name="first_name" maxlength="50" size="30">
+					 </td>
+					</tr>
+					 
+					<tr>
+					 <td valign="top"">
+					  <label for="last_name">Last Name *</label>
+					 </td>
+					 <td valign="top">
+					  <input  type="text" name="last_name" maxlength="50" size="30">
+					 </td>
+					</tr>
+					<tr>
+					 <td valign="top">
+					  <label for="email">Email Address *</label>
+					 </td>
+					 <td valign="top">
+					  <input  type="text" name="email" maxlength="80" size="30">
+					 </td>
+					 
+					</tr>
+					<tr>
+					 <td valign="top">
+					  <label for="telephone">Telephone Number</label>
+					 </td>
+					 <td valign="top">
+					  <input  type="text" name="telephone" maxlength="30" size="30">
+					 </td>
+					</tr>
+					<tr>
+					 <td valign="top">
+					  <label for="comments">Comments *</label>
+					 </td>
+					 <td valign="top">
+					  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+					 </td>
+					 
+					</tr>
+					<tr>
+					 <td colspan="2" style="text-align:center">
+					  <input type="submit" value="SUBMIT" class="send-button btn">
+					 </td>
+					</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="content">
+			<figure class="footer-logo">
+				<img src="img/logo-short.png">
+			</figure>
+
+			<div class="footer-links">
+				<div class="landing-links">
+					<nav>
+						<a href="/product.html/">PRODUCT</a> 
+  						<a href="/contact.html/" class="active">CONTACT</a> 
+  						<a href="/blog.html/">BLOG</a> 
+  					</nav>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+      function initMap() {
+        var uluru = {lat: 52.070472, lng: 4.321523};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru,
+          zoomControl: false,
+  		  scaleControl: false,
+          scrollwheel: false,
+  		  disableDoubleClickZoom: true,
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMPoCXPzYhiL94Gd2qGeR75a__ZAQ1U_M&callback=initMap">
+    </script>
+</body>
+</html>
