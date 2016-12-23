@@ -6,6 +6,7 @@
 	<title>Title of the document</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -59,7 +60,7 @@
 					<img src="img/icon2.png">
 				</figure>
 
-				<p>Create your free Onyscale account and add your first project</p>
+				<p>Keep track of your project progress and regularly update its status</p>
     		</div>
 
 			<div class="step column-right">
@@ -67,7 +68,7 @@
 					<img src="img/icon1.png">
 				</figure>
 
-				<p>Create your free Onyscale account and add your first project</p>
+				<p>Chill and get a happy client who understands what you are working on</p>
     		</div>
     	</div>
 	</section>
@@ -75,36 +76,60 @@
 	<section class="white-block">
 		<div class="content">
 			<div class="review">
-				<article class="review-block">
-					<p>I have hinted that I would often jerk poor Queequeg from between the whale and the ship where he would.</p>
-					<p class="review-name"> — Jackson </p>
+				<article class="review-block seen" id="block-1">
+					<p>Now our customer service department spends 3 times less time on communication. Clients are happy as well!</p>
+					<p class="review-name"> — Alfred </p>
 					<div class="arrow-down"></div>
 				</article>
 
-				<div class="avatar">
+				<article class="review-block" id="block-2">
+					<p>It suits both for design and development. Dev team really appreciates that it is in sync with GitHub.</p>
+					<p class="review-name"> — Jonathan </p>
+					<div class="arrow-down"></div>
+				</article>
+
+				<article class="review-block" id="block-3">
+					<p>I have hinted that I would often jerk poor Queequeg from between the whale and the ship where he would. s s</p>
+					<p class="review-name"> — Jesse </p>
+					<div class="arrow-down"></div>
+				</article>
+
+				<div class="avatar clear" id="u1">
 				</div>
 
-				<div class="avatar avatar-2">
+				<div class="avatar" id="u2">
 				</div>
 
-				<div class="avatar avatar-3">
+				<div class="avatar" id="u3">
 				</div>
 			</div>
 
 			<div class="review review-right">
-				<div class="avatar-top">
+				<div class="avatar-top clear" id="u4">
 				</div>
 
-				<div class="avatar-top avatar-2">
+				<div class="avatar-top " id="u5">
 				</div>
 
-				<div class="avatar-top avatar-3">
+				<div class="avatar-top" id="u6">
 				</div>
 
-				<article class="review-block">
+				<article class="review-block seen" id="block-4">
 					<div class="arrow-up"></div>
-					<p>I have hinted that I would often jerk poor Queequeg from between the whale and the ship where he would.</p>
-					<p class="review-name"> — Jackson </p>
+					<p>The best thing about Onyscale is that it makes me forget about communicating with client all the time.</p>
+					<p class="review-name"> — Cody </p>
+				</article>
+
+				<article class="review-block" id="block-5">
+					<div class="arrow-up"></div>
+					<p>I do really appreciate its simplicity! Just post your latest updates once in a while and you are done!</p>
+					<p class="review-name"> — Terrence </p>
+				</article>
+
+				<article class="review-block" id="block-6">
+					<div class="arrow-up"></div>
+					<p>Onyscale has helped grow my business amazingly. Everything has been easier than I ever imagined.</p>
+					<p class="review-name"> — Lucas </p>
 				</article>
 			</div>
 		</div>
@@ -128,5 +153,67 @@
 		</div>
 	</footer>
 </body>
+
+<script type="text/javascript">
+	$( "#u1" ).click(function() {
+		$('#u1').addClass('clear');
+	    $('#u2').removeClass('clear');
+	    $('#u3').removeClass('clear');
+	  	$('#block-1').addClass('seen');
+	    $('#block-2').removeClass('seen');
+	    $('#block-3').removeClass('seen');
+	    $('.arrow-down').css("margin-left", "4px");
+	});
+
+	$( "#u2" ).click(function() {
+		$('#u1').removeClass('clear');
+	    $('#u2').addClass('clear');
+	    $('#u3').removeClass('clear');		
+	  	$('#block-1').removeClass('seen');
+	    $('#block-2').addClass('seen');
+	    $('#block-3').removeClass('seen');
+	    $('.arrow-down').css("margin-left", "92px");
+	});
+
+	$( "#u3" ).click(function() {
+		$('#u1').removeClass('clear');
+	    $('#u2').removeClass('clear');
+	    $('#u3').addClass('clear');	
+	  	$('#block-1').removeClass('seen');
+	    $('#block-2').removeClass('seen');
+	    $('#block-3').addClass('seen');
+	    $('.arrow-down').css("margin-left", "181px");
+	});
+
+	$( "#u4" ).click(function() {
+		$('#u4').addClass('clear');
+	    $('#u5').removeClass('clear');
+	    $('#u6').removeClass('clear');	
+	  	$('#block-4').addClass('seen');
+	    $('#block-5').removeClass('seen');
+	    $('#block-6').removeClass('seen');
+	    $('.arrow-up').css("margin-right", "4px");
+	});
+
+	$( "#u5" ).click(function() {
+		$('#u4').removeClass('clear');
+	    $('#u5').addClass('clear');
+	    $('#u6').removeClass('clear');	
+	  	$('#block-4').removeClass('seen');
+	    $('#block-5').addClass('seen');
+	   	$('#block-6').removeClass('seen');
+	   	$('.arrow-up').css("margin-right", "88px")
+	});
+
+	$( "#u6" ).click(function() {
+		$('#u4').removeClass('clear');
+	    $('#u5').removeClass('clear');
+	    $('#u6').addClass('clear');	
+	  	$('#block-4').removeClass('seen');
+	    $('#block-5').removeClass('seen');
+	    $('#block-6').addClass('seen');
+	    $('.arrow-up').css("margin-right", "174px")
+	});
+</script>
 
 </html>

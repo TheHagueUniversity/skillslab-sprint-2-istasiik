@@ -341,6 +341,7 @@ a:hover {
 	border-radius: 6px;
 	padding: 25px 40px 20px 40px;
 	display: inline-block;
+	display: none
 }
 
 .review-right {
@@ -355,7 +356,8 @@ a:hover {
 	display: inline-block;
 	background-color: #F5F5F5;
 	margin-left: 30px;
-	margin-top: 30px
+	margin-top: 30px;
+	opacity: .3
 }
 
 .avatar-top {
@@ -367,7 +369,8 @@ a:hover {
 	background-color: #F5F5F5;
 	margin-right: 30px;
 	margin-bottom: 30px;
-	float: right
+	float: right;
+	opacity: .3
 }
 
 .avatar-2 {
@@ -435,7 +438,7 @@ a:hover {
 .company-office-photo {
 	width: 215px;
 	height: 215px;
-	background-color: #F5F5F5;
+	background: url('http://minnelijk.modusvivendi.nl/images/nieuwsbrief/Stationsplein%201%20Zwijndrecht_50.JPG');
 	border-radius: 6px;
 	border: 5px solid white;
 	display: inline-block;
@@ -525,17 +528,40 @@ a:hover {
 	background-color: white;
 	border-radius: 6px;
 	overflow: hidden;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+	-webkit-box-shadow: 0px 10px 13px 0px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 10px 13px 0px rgba(0,0,0,0.05);
+	box-shadow: 0px 10px 13px 0px rgba(0,0,0,0.05);
+}
+
+.inside-block:hover {
+	background-color: white;
+	border-radius: 6px;
+	overflow: hidden;
+	transform: scale(1.03);
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+
 }
 
 .inside-block h2{
 	font-weight: 600;
 	color: black;
-	margin-left: 30px
+	margin-left: 30px;
+	margin-top: 10px;
 }
 
 .inside-block p{
 	margin-left: 30px;
-	padding-bottom: 20px!important
+	padding-bottom: 20px!important;
+	color: gray
 }
 
 .inside-block img{
@@ -545,5 +571,43 @@ a:hover {
 .row {
 	margin-top: 25px;
 	margin-bottom: 25px
+}
+
+.seen {
+	display: inherit!important
+}
+
+.clear {
+	opacity: 1!important
+}
+
+#u1 {
+	background-image: url('https://randomuser.me/api/portraits/men/89.jpg');
+	background-size: cover;
+}
+
+#u2 {
+	background-image: url('https://randomuser.me/api/portraits/men/6.jpg');
+	background-size: cover;
+}
+
+#u3 {
+	background-image: url('https://randomuser.me/api/portraits/men/31.jpg');
+	background-size: cover;
+}
+
+#u4 {
+	background-image: url('https://randomuser.me/api/portraits/men/64.jpg');
+	background-size: cover;
+}
+
+#u5 {
+	background-image: url('https://randomuser.me/api/portraits/men/82.jpg');
+	background-size: cover;
+}
+
+#u6 {
+	background-image: url('https://randomuser.me/api/portraits/men/30.jpg');
+	background-size: cover;
 }
 
